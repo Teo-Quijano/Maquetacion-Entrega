@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Smartrip</title>
+    <link rel="stylesheet" href="./agencia.css">
+</head>
+
+<body>
+    <img class="logo-agencia" src="https://i.postimg.cc/WpGD1BHT/smartrip-trasnparente.png" alt="logo-smartrip" />
+    <img class="imagen-principal" src="https://i.postimg.cc/8cxR6qVG/playa5.jpg" alt="imagen-principal" />
+    <h1>Bienvenido a Smartrip</h1>
+    <h2>Agencia de viajes virtual con mas de 10 años de experiencia <br>
+        en el mercado Español, trabajamos con los principales destinos <br>
+        turisticos, confie sus proximas vacaciones a nuestros especialistas</h2>
+
+    <div class="main">
+        <span></span>
+
+        <div class="grupo">
+            <div class="contenido izq">
+                <span></span>
+
+                <div class="fullwrap">
+                    <img src="https://i.postimg.cc/HnTfk8x1/playa3.jpg" />
+                    <div class="fullcap">
+                        Canarias: desde 699 Euros <br><br>
+                        3 Dias / 2 Noches
+                    </div>
+                </div>
+                <div class="fullwrap">
+                    <img src="https://i.postimg.cc/Kj6D346Q/playa6.jpg" />
+                    <div class="fullcap">
+                        Baleares: desde 799 Euros <br><br>
+                        3 Dias / 2 Noches
+                    </div>
+                </div>
+                <div class="fullwrap">
+                    <img src="https://i.postimg.cc/2ybx5nKV/crucero.jpg" />
+                    <div class="fullcap">
+                        Cruceros: desde 899 Euros <br><br>
+                        7 Dias Mediterraneo
+                    </div>
+                </div>
+                <span></span>
+            </div>
+
+            <h2>Contactenos</h2>
+            <div class="contenido der">
+                <span></span>
+                <form>
+                    <input id="nombre" type="text" class="feedback-input" placeholder="Nombre" />
+                    <input id="email" type="text" class="feedback-input" placeholder="Email" />
+                    <input id="destino" type="text" class="feedback-input" placeholder="Destino" />
+                    <button class="btn" onclick="addPersonas()" type="reset">Enviar</button>
+                    <button class="btn" onclick="mostrarPersonas()" type="reset">Mostrar</button>
+                    <button class="btn" onclick="filtrarDestinos()" type="reset">Filtrar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <aside class="aside aside2">
+        <table class="table" id="personas">
+            <tr class="head">
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Destino</th>
+            </tr>
+        </table>
+
+    </aside>
+
+    <aside class="filtered aside3">
+        <table class="table" id="personas">
+            <tr class="head">
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Destino</th>
+            </tr>
+        </table>
+
+    </aside>
+
+
+    <script src="formulario.js"></script>
+</body>
+
+</html>

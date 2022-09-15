@@ -1,0 +1,38 @@
+.container {
+   display: grid;
+   height: 35rem;
+   grid-template-columns: 2fr 1fr 2fr;
+   grid-template-rows: 1fr 1fr;
+
+}
+
+.item {
+   padding: 0.25rem;
+   color: white;
+   font-size: 1rem;
+   text-align: center;
+}
+
+.itemA {
+   background-color: greenyellow
+}
+
+.itemB {
+   background-color: orange
+}
+
+.itemC {
+   background-color: darkorange
+}
+
+.itemD {
+   background-color: red
+}
+
+.itemE {
+   background-color: blue
+}
+
+.itemF {
+   background-color: yellow
+}

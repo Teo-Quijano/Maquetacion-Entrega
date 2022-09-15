@@ -1,0 +1,88 @@
+.padre {
+    display: grid;
+    height: 35rem;
+    width: 79rem;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: [y0] 0.5fr [y1] 1fr [y2] 1fr [y3] 0.5fr [y4];
+    grid-template-areas:
+
+        "header header image"
+        "aside contenido contenido"
+        "aside contenido contenido"
+        "footer footer footer"
+    ;
+}
+
+.padre .header {
+    grid-area: header;
+    background-color: brown;
+    text-align: center;
+    color: white;
+    padding: 0.8rem;
+}
+
+.padre .image {
+    grid-area: image;
+    background-color: rgb(76, 13, 4);
+    text-align: center;
+    color: white;
+    padding: 0.8rem;
+}
+
+.padre .aside {
+    grid-area: aside;
+    background-color: orange;
+    text-align: center;
+    color: orange;
+    padding: 0.8rem;
+}
+
+.aside1 {
+    background-color: white;
+    padding: 3rem;
+    margin: 0.1rem;
+    margin-bottom: 7.2rem;
+
+}
+
+.aside2 {
+    background-color: white;
+    padding: 3rem;
+    margin: 0.1rem;
+
+}
+
+.padre .contenido {
+    grid-area: contenido;
+    background-color: orangered;
+    text-align: center;
+    color: white;
+    padding: 0.8rem;
+
+
+}
+
+.contenido1 {
+    padding: 4.8rem;
+    margin-bottom: 0.3rem;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+
+}
+
+.texto {
+    padding: 4.5rem;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+
+}
+
+.padre .footer {
+    grid-area: footer;
+    background-color: rgb(76, 13, 4);
+    text-align: center;
+    color: white;
+    padding: 0.8rem;
+}

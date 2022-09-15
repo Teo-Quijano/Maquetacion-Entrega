@@ -1,0 +1,203 @@
+.grid {
+  display: grid;
+  height: 35rem;
+  width: 79rem;
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+  grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4] 1fr [y5] 1fr [y6];
+}
+
+.header {
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  grid-column-start: x0;
+  grid-column-end: x4;
+  padding: 18px;
+
+
+
+}
+
+.padrecontenido {
+  display: grid;
+  background: blue;
+  grid-column-start: x0;
+  grid-column-end: x3;
+  grid-row: y1 / y5;
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+  grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+
+
+
+}
+
+.contenido {
+  grid-column-start: x0;
+  grid-column-end: x3;
+  grid-row: y0 / y1;
+  border-color: white;
+  color: white;
+  font-size: x-large;
+  font-weight: 600;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  margin-bottom: 0.5rem;
+
+
+}
+
+.tema1 {
+  grid-column-start: x0;
+  grid-column-end: x2;
+  grid-row: y1 / y3;
+  border-color: white;
+  padding: 0.5rem;
+  margin: 1rem;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+  color: white;
+
+
+}
+
+.tema2 {
+  grid-column-start: x2;
+  grid-column-end: x3;
+  grid-row: y1 / y3;
+  border-color: white;
+  padding: 0.5rem;
+  margin: 1rem;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+  border: 1px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+
+
+}
+
+.padremenu {
+  display: grid;
+  background: darkturquoise;
+  grid-column-start: x3;
+  grid-column-end: x4;
+  grid-row: y1 / y5;
+  grid-template-columns: [x0] 1fr [x1];
+  grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+  padding: 0.5rem;
+
+
+
+}
+
+.menu {
+  background: darkturquoise;
+  color: white;
+  font-size: x-large;
+  font-weight: 600;
+  grid-column-start: x0;
+  grid-column-end: x1;
+  grid-row: y0 / y1;
+  border-color: white;
+  text-align: center;
+  padding: 25px;
+  margin: 0.2rem;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+
+
+
+}
+
+
+.menu1 {
+  background: black;
+  grid-column-start: x0;
+  grid-column-end: x1;
+  grid-row: y1 / y2;
+  margin: 0.15rem;
+  color: white;
+  text-align: center;
+  padding: 30px;
+
+}
+
+.menu2 {
+  background: black;
+  grid-column-start: x0;
+  grid-column-end: x1;
+  grid-row: y2/ y3;
+  margin: 0.15rem;
+  color: white;
+  text-align: center;
+  padding: 30px;
+
+}
+
+.menu3 {
+  background: black;
+  grid-column-start: x0;
+  grid-column-end: x1;
+  grid-row: y3 / y4;
+  border-color: white;
+  margin: 0.15rem;
+  color: white;
+  text-align: center;
+  padding: 30px;
+
+}
+
+
+.padrefooter {
+  display: grid;
+  background: rgb(104, 11, 255);
+  grid-column-start: x0;
+  grid-column-end: x4;
+  grid-row: y5 / y6;
+  grid-template-columns: [x0] 1fr [x1] 1fr [x2];
+  grid-template-rows: [y0] 1fr [y1];
+  padding: 0.5rem;
+
+}
+
+.footer {
+  background: rgb(104, 11, 255);
+  grid-column-start: x0;
+  grid-column-end: x1;
+  grid-row: y0 / y1;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  margin-right: 0.2rem;
+  font-weight: 500;
+
+
+}
+
+.contacto {
+  background: rgb(104, 11, 255);
+  grid-column-start: x1;
+  grid-column-end: x2;
+  grid-row: y0 / y1;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  margin-left: 0.2rem;
+  font-weight: 500;
+}

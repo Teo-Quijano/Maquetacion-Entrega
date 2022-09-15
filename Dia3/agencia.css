@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(22, 104, 177);
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    gap: 20px;
+    z-index: 1;
+
+}
+
+h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    gap: 20px;
+    z-index: 1;
+    color: rgb(96, 76, 137);
+
+}
+
+
+.logo-agencia {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    margin: 35px;
+}
+
+.imagen-principal {
+    width: 100vw;
+    height: 100vh;
+    width: 1300px;
+    height: 1100px;
+    opacity: 0.4;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1
+}
+
+.contenido.izq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.contenido.der {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: row;
+
+}
+
+
+.filtrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: row;
+
+}
+
+.fullwrap {
+    position: relative;
+    max-width: 400px;
+    width: 350px;
+    height: 350px;
+}
+
+.fullwrap img {
+    width: 100%;
+}
+
+.fullcap {
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 60%;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 20%;
+
+
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+
+.fullcap {
+    visibility: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.fullwrap:hover .fullcap {
+    visibility: visible;
+    opacity: 1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form {
+    max-width: 420px;
+    margin: 10px auto;
+}
+
+.feedback-input {
+    color: rgb(11, 11, 11);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    z-index: 2;
+}
+
+.feedback-input:focus {
+    border: 2px solid #CC4949;
+}
+
+
+[class="btn"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #CC6666;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+    text-align: center;
+}
+
+[type="button"]:hover {
+    background: #CC4949;
+}
+
+.aside {
+    display: none;
+}
+
+.aside2 {
+    width: 300px;
+}
+
+.filtered {
+    display: none;
+}
+
+.aside3 {
+    width: 300px;
+}
+.table {
+    width: 300px;
+    background-color: beige;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
