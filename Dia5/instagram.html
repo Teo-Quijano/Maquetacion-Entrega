@@ -1,88 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="./instagram.css">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="instagram.css">
 </head>
+
 <body>
-   
-        <div><img class="movil" src="https://i.postimg.cc/CKFw9Kt7/IG-transparente.png" alt="movil" width="102%" height="102%"></div>
 
-        <div class="contenedor login">
-        
-         <div class="logo">
-    <img src="https://i.postimg.cc/YCP3cZns/d2529dbef8ed.png" alt="logo IG" width="65%" height="65%">     
-        </div>
-        <br><br>
-         <div class="formulario">
-            <form action="submeter-formulario.php" method="post">       
+    <div class="container">
+        <div class="main-container">
+            <div class="main-content">
+                <div class="slide-container">
+                    <div class="slide-content" id="slide-content">
+                        <img src="https://i.postimg.cc/CKFw9Kt7/IG-transparente.png" alt="slide image" class="active">
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="form-content box">
+                        <div class="logo">
+                            <img src="https://i.postimg.cc/YCP3cZns/d2529dbef8ed.png" alt="Instagram logo" class="logo-light">
+                            
+                        </div>
+                        <div class="signin-form" id="signin-form">
+                            <div class="form-group">
+                                <div class="animate-input">
+                                    <span>
+                                        Teléfono, usuario o correo electrónico
+                                    </span>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="animate-input">
+                                    <span>
+                                        Contraseña
+                                    </span>
+                                    <input type="password">
+                                    <button>Show</button>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-login" id="signin-btn" disabled>
+                                    Iniciar sesión
+                                </button>
+                            </div>
+                            <div class="divine">
+                                <div></div>
+                                <div>O</div>
+                                <div></div>
+                            </div>
+                            <div class="btn-group">
+                                <button class="btn-fb">
+                                    <img src="https://i.postimg.cc/gjkTjqDw/facebook.png" alt="">
+                                    <span>Iniciar sesión con Facebook</span>
+                                </button>
+                            </div>
+                            <a href="#" class="forgot-pw">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </div>
+                    <div class="box goto">
+                        <p>
+                            ¿No tiene una cuenta?
+                            <a href="#">Registrate</a>
+                        </p>
+                    </div>
 
-                <p>
-                  <label for="nombre" class="colocar_nombre">
-                    <span class="obligatorio"></span>
-                  </label>
-                    <input type="text" name="introducir_nombre" id="nombre" placeholder="Teléfono, usuario o correo electrónico">
-                </p>
-              
-                <p>
-                  <label for="email" class="colocar_email">
-                    <span class="obligatorio"></span>
-                  </label>
-                    <input type="email" name="introducir_email" id="email" placeholder="Contraseña">
-                </p>
-                <button class="btn" >Iniciar sesión</button>
-
-                <p class="aviso">
-                  <span class="obligatorio"> </span>
-                </p> 
-                <img class="FB" src="https://i.postimg.cc/7LcQ94zD/IG-sesion-FB.png" alt="">
+                    <div class="app-download">
+                        <p>Descarga la app.</p>
+                        <div class="store-link">
+                            <a href="#">
+                                <img src="https://i.postimg.cc/Yqtnz2wj/android.png" alt="app store">
+                                <a href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&amp;ct=igweb.loginPage.badge&amp;mt=8">
+                            </a>
+                            <a href="#">
+                                <img src="https://i.postimg.cc/qBsDKhS9/ios.png" alt="google play">
+                                <a href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26utm_medium%3Dbadge"></a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="registro">¿No tienes una cuenta? <span class="span">Registrate</span></div>
-
-        <div class="apps">                                                                       
-       
-         <img src="https://i.postimg.cc/K8ycBLGN/Apps-IG.png" alt="" width="68%" height="68%"></div>
-       
-       
-        <div class="footer">Meta
-          Información
-          Blog
-          Empleo
-          Ayuda
-          API
-          Privacidad
-          Condiciones
-          <span class="fondo">
-          Cuentas destacadas
-          </span>
-          Hashtags
-          Ubicaciones
-          Instagram Lite
-          <span class="fondo">
-          Subir contactos y no usuarios
-         </span>
-          <br><br>
-          Danza
-          <span class="fondo">
-          Comida y bebida
-        </span>
-        <span class="fondo">
-          Casa y jardín
-        </span>
-          Música
-          <span class="fondo">
-          Artes visuales
-        </span>
-          <br><br>
-          Español
-          <span class="fondo">
-          © 2022 Instagram from Meta</span>
+        <div class="footer">
+            <div class="links">
+                <a href="#">Meta</a>
+                <a href="#">Información</a>
+                <a href="#">Blog</a>
+                <a href="#">Empleo</a>
+                <a href="#">Ayuda</a>
+                <a href="#">API</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Condicipnes</a>
+                <a href="#">Cuentas destacadas</a>
+                <a href="#">Hashtags</a>
+                <a href="#">Ubicaciones</a>
+                <a href="#">Intagram Lite</a>
+                <a href="#">Subir contactos y no usuarios</a>
+                <a href="#">Danza</a>
+                <a href="#">Comida y bebida</a>
+                <a href="#">Casa y jardín</a>
+                <a href="#">Música</a>
+                <a href="#">Artes visuales</a>
+            </div>
+            <div class="copyright">
+                <span class="language">
+                    <select name="language">
+                        <option value="#">Español</option>
+                        <option value="#">English</option>
+                    </select>
+                </span>© 2022 Instagram from Meta
+            </div>
         </div>
-
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Viajes DM</title>
+</head>
+
+
+<body>
+    <main class="main">
+
+        <div class="content">
+
+            <header class="header"></header>
+
+            
+            <div class="form_container">
+                    <img src="https://i.postimg.cc/c1TKGbWZ/Viajes.png" alt="">
+                    
+                    <form class="form">
+                    
+                        <div class="form_div">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
+                        </div>
+                        <div class="form_div">
+                            <label for="origen">Origen</label>
+                            <input type="text" name="origen" id="origen" placeholder="Origen">
+                        </div>
+                        <div class="form_div">
+                            <label for="destino">Destino</label>
+                            <input type="text" name="destino" id="destino" placeholder="Destino">
+                        </div>
+                    
+                        <div class="form_div">
+                            <label for="nPersonas">Nº Personas</label>
+                            <input type="number" name="nPersonas" id="nPersonas" placeholder="Cantidad de Personas">
+                        </div>
+                    
+                        <div class="form_div">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" name="fecha" id="fecha" >
+                        </div>
+                    
+                        <div class="form_div form_buttons">
+                            <button class="btn" type="button" onclick="recogerInfo()">Solicitar Info</button>
+                            <button class="btn" type="button" onclick="filtrar()">Filtrar</button>
+                        </div>
+                    </form>
+            </div>
+
+            <div class="cards_container">
+
+                <div class="card">
+
+                    <div class="card_todo">
+                        <div class="card_front">
+                            <div class="card__title">
+                                <h2>
+                                    <p>Maldivas</p>
+                                    
+                                </h2>
+
+                                <span class="card__title card__title--small">VIAJAR A LAS MALDIVAS</span>
+
+                            </div>
+
+                            <div class="card__content">
+                                <p>Maldivas es relax, aventura, belleza y exclusividad. 
+                                Hablamos de un país situado en el océano Índico formado 
+                                por más de 1.200 islas estando habitadas tan solo unas 200 islas. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card_back">
+                            <img src="https://i.postimg.cc/Twtv4x4m/Maldivas.jpg" alt="Maldivas">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                
+                    <div class="card_todo">
+                
+                        <div class="card_front">
+                
+                            <div class="card__title">
+                                <h2>
+                                    <p>New York</p>
+                                    
+                                </h2>
+                            
+                                <span class="card__title card__title--small">VIAJES A NUEVA YORK.</span>
+                            
+                            </div>
+                
+                            <div class="card__content">
+                                <p>Nueva York, la ciudad de los rascacielos por excelencia, 
+                                donde se mezcla una amplia diversidad de culturas, de museos, teatros y grandes 
+                                musicales, siendo más de mil veces filmada, fotografiada y a la que se han dedicado 
+                                cientos de canciones, ahora puedes descubrirla y hacerla tuya. 
+                                </p>
+                            </div>
+                
+                        </div>
+                
+                        <div class="card_back">
+                
+                            <img src="https://i.postimg.cc/Dzk86r9s/New-York.jpg" alt="Foto New York">
+                
+                        </div>
+                
+                    </div>
+                
+                </div><div class="card">
+                
+                    <div class="card_todo">
+                
+                        <div class="card_front">
+                
+                        <div class="card__title">
+                                <h2>
+                                    <p>Japon</p>
+                                    
+                                </h2>
+                            
+                                <span class="card__title card__title--small">Descubrimiento sin fin </span>
+                            
+                            </div>
+                
+                            <div class="card__content">
+                                <p>Ese país que combina tradición milenaria con tecnología y modernidad. 
+                                Hablamos de uno de los países perfectos para conocer en un circuito o paquete
+                                vacacional organizado, para no perderte ningún detalle y con el objetivo de 
+                                centrarte en lo realmente importante: disfrutar de Japón.</p>
+                            </div>
+                
+                        </div>
+                
+                        <div class="card_back">
+                
+                            <img src="https://i.postimg.cc/Tw8gyyq2/Japon.jpg" alt="">
+                
+                        </div>
+                
+                    </div>
+                
+                </div>
+
+            </div>
+
+            <div class="data hidden">
+                <table class="table">
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

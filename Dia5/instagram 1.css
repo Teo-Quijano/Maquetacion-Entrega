@@ -1,0 +1,267 @@
+body {
+
+    display: flex;
+
+}
+
+.movil {
+
+top: 9.5px;
+left: 225.5px;
+position: relative;
+
+}
+
+.contenedor.login { 
+    
+    position: relative;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    flex-direction: column;
+    left: 242px;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 395px;
+    top: 10px;
+    
+
+}
+
+.logo {
+    position: absolute;
+    top: 11%;
+    margin-bottom: 90%;
+    left: 85px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.login {
+    
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+
+
+
+}
+
+.formulario {
+
+    width: 350px;;
+    top: 150px;
+    left: 20px;
+    bottom: 10px;
+    position: absolute;
+    flex-direction: column;
+    
+}
+
+input {
+
+    position: relative;
+    width: 255px;
+    height: 34px;
+    border: 2px;
+    left: 25px;
+    bottom: 35px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    border-width: 1px;
+    margin: -5px;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #262626;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    padding-left: 5px;
+    outline-style: unset;
+
+
+}
+
+.btn {
+
+    position: relative;
+    width: 263px;
+    height: 30px;
+    border: 2px;
+    border-radius: 4px;
+    left: 20px;
+    bottom: 32px;
+    border-style: double;
+    border-color: rgb(178,223,252);
+	display: inline-block;
+	vertical-align: middle;
+    background-color: rgb(178,223,252);
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif; color: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+  
+}
+
+.FB {
+
+    position: relative;
+    width: 95%;
+    height: 95%;
+    bottom: 40px;
+    right: 15px;
+
+}
+
+.registro {
+
+    position: relative;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(200, 200, 200);
+    flex-direction: row;
+    left: 242px;
+    flex-wrap: wrap;
+    width: 310px;
+    height: 25px;
+    top: 448px;
+    left: -111.50px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif; color: #262626;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+
+}
+
+span {
+
+    font-weight: 600;
+    color: rgb(20,160,247)
+}
+
+.apps {
+
+    position: absolute;
+    left: 660px;
+    top: 540px;
+
+}
+
+.footer {
+    position: absolute;
+    top: 700px;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif; color: rgb(159,163,174);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    height: 130px;
+    width: 1000px;
+    text-align: center;
+    padding-inline: 100px;
+    margin-inline: 45px;
+    word-spacing: 15px;
+    line-height: 14px; 
+
+}
+
+.fondo {
+
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif; color: rgb(159,163,174);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    word-spacing: 0px;
+}
+
+/* Media Query 1300px */
+/* =================================================================================== */
+
+@media screen and (max-width: 768px){
+    
+
+
+* {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%vw;
+    max-height: 100%vh;
+    flex-wrap: nowrap;
+    position:relative;
+    vertical-align: middle;
+
+}
+
+.contenedor.login { 
+    
+    position: absolute;
+    left: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.FB {
+
+    display: none;
+}
+
+.registro {
+    display: none;
+}
+
+.movil {
+
+    display: none;
+    
+}
+}
+
+@media screen and (max-width: 475px){
+    
+
+
+    * {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%vw;
+        max-height: 100%vh;
+        flex-wrap: nowrap;
+        position:relative;
+        vertical-align: middle;
+           
+    }
+
+    .contenedor.login { 
+    
+        position: absolute;
+        left: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .FB {
+
+        display: none;
+    }
+    
+    .registro {
+        display: none;
+    }
+    
+    .movil {
+    
+        display: none;
+        
+    }
+    }

@@ -37,12 +37,6 @@ function mostrarPersonas() {
     aside.classList.remove("aside");
   }
 
-  lista.innerHTML = `<tr class="head">
-    <th>Nombre</th>
-    <th>Email</th>
-    <th>Destino</th>
-    </tr>`;
-
   for (let i = 0; i < personas.length; i++) {
     lista.innerHTML += `<tr>
         <th class= "table">
@@ -71,10 +65,12 @@ function filtrarDestinos () {
     let promociones = document.getElementById("personas");
     let filtered = document.querySelector(".aside3");
   
-    if (filtered.classList.contains("filtered")) {
-      filtered.classList.remove("filtered");
-    }
+    // if (filtered.classList.contains("filtered")) {
+    //   filtered.classList.remove("filtered");
+    // }
   
+
+
     promociones.innerHTML = `<tr class="head">
       <th>Nombre</th>
       <th>Email</th>
